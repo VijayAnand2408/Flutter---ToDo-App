@@ -37,6 +37,7 @@ class _TodoListState extends State<TodoList> {
             child: TodoTile(
               todoTitle: widget.todos[index].name,
               todoDescription: widget.todos[index].description,
+              todoType:widget.todos[index].type,
               isChecked: widget.todos[index].isDone,
               checkboxCallback: (bool checkboxState) {
                 setState(
